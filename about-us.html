@@ -5,582 +5,466 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="fonts/Gilroy/stylesheet.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="libs/aos/aos.css">
-    <link rel="stylesheet" href="libs/lightgallery/lightgallery.css">
-    <link rel="stylesheet" href="css/global.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ametist</title>
 </head>
 <body>
+<h1 class="hidden-title">Аметист Ametist - логистическая перевозка</h1>
 <header class="header">
     <div class="container">
         <div class="header-grid">
-            <a href="./" class="header-logo">
-                <img src="img/svg/toyboss-logo-white.svg" alt="">
+            <a href="" class="logo-link">
+                <img src="img/svg/logo.svg" alt="">
             </a>
-            <nav class="nav">
-                <a href="./about-us.html">О НАС</a>
-                <a href="">Производство</a>
-                <a href="">Продукция</a>
-                <a href="">СОТРУДНИЧЕСТВО</a>
-                <a href="./news.html">НОВОСТИ</a>
-                <a href="">КОНТАКТЫ</a>
-            </nav>
-            <div class="nav-right">
-                <div class="nav-right-set-lang">
-                    <div onclick="openDropdown('landDropdown')" class="dropbtn">ru</div>
-                    <div id="landDropdown" class="dropdown-content">
-                        <a href=""><img src="img/svg/kg.svg" alt="">KG</a>
-                        <a href="" class="active"><img src="img/svg/en.svg" alt="">EN</a>
-                        <a href=""><img src="img/svg/ru.svg" alt="">RU</a>
-                    </div>
+            <div class="header-wrapper">
+                <nav class="nav">
+                    <a class="nav-link" href="">О Нас</a>
+                    <a class="nav-link" href="">Услуги</a>
+                    <a class="nav-link" href="">Клиентам</a>
+                    <a class="nav-link" href="">Вакансии</a>
+                    <a class="nav-link" href="">Контакты</a>
+                </nav>
+                <div class="lang">
+                    <a href="" class="lang-link">RU</a>
                 </div>
-                <div class="mobile-burger" onclick="showMobileMenu()">
-                    <img src="img/svg/menu.svg" alt="">
+                <a href="" class="phone">8 (812) 416 47 48</a>
+                <div class="socials">
+                    <a href="">
+                        <img src="img/svg/telegram.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="img/svg/linkedin.svg" alt="">
+                    </a>
+
                 </div>
-                <a href="" class="red-button button">Игра «Ustukan»</a>
+                <div class="button">ЗАПРОС СТАВКИ</div>
             </div>
+            <div class="mobile-burger"></div>
         </div>
     </div>
 </header>
-<div id="mobile-menu" class="mobile-menu">
-    <div class="mobile-menu-head">
-        <a href="./"><img src="img/svg/toyboss-logo-blue.svg" alt=""></a>
-        <div onclick="hiddenMobileMenu()">
-            <img src="img/svg/close.svg" alt="">
-        </div>
-    </div>
-    <nav class="mobile-menu-head-nav">
-        <a href="./about-us.html">О НАС</a>
-        <a href="">Производство</a>
-        <a href="">Продукция</a>
-        <a href="">СОТРУДНИЧЕСТВО</a>
-        <a href="./news.html">НОВОСТИ</a>
-        <a href="">КОНТАКТЫ</a>
-    </nav>
-    <a href="" class="red-button button">Игра «Ustukan»</a>
-</div>
-
-<section class="about-us-bg-block" style="background-image: url('img/png/about-us-bg.png')">
-
+<section class="main">
+    <picture class="image">
+        <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/png/main-slide.webp 1x, img/png/main-slide.webp 2x">
+        <source type="image/jpeg" media="(min-width: 1200px)"
+                srcset="img/png/main-slide.png 1x, img/png/main-slide.png 2x">
+        <img class="photo-card__img" src="img/png/main-slide.png" srcset="img/png/main-slide.png 2x" width="1920"
+             height="596" alt="">
+    </picture>
     <div class="container">
-        <h1 class="about-us-bg-block-title">О нас</h1>
-    </div>
-</section>
-<section class="history-block">
-    <div class="container">
-        <div class="history-block-preview-grid">
-            <div class="history-block-preview-grid-left">
-                <h2 class="history-block-preview-grid-left-title">История</h2>
-                <p class="history-block-preview-grid-left-desc">
-                    Торговая Марка «Тойбосс» была основана в 2012 году и за этот короткий срок смогла зарекомендовать
-                    себя на рынке Кыргызстана как производитель качественной, полезной, а самое главное вкусной мясной
-                    продукции. Наша компания предлагает
-                </p>
-            </div>
-            <div class="history-block-preview-grid-right">
-                <img class="history-block-preview-grid-right-img" src="img/png/history.png" alt="">
-            </div>
-        </div>
-        <div class="history-block-tab" id="tab-history">
-            <div class="swiper">
-                <ul class="swiper-wrapper">
-                    <li class="swiper-slide">
-                        <a href="#history-block-tab-1" class="history-block-card">
-                            2012
-                        </a>
-                    </li>
-                    <li class="swiper-slide">
-                        <a href="#history-block-tab-2" class="history-block-card">
-                            2015
-                        </a>
-                    </li>
-                    <li class="swiper-slide">
-                        <a href="#history-block-tab-3" class="history-block-card">
-                            2017
-                        </a>
-                    </li>
-                    <li class="swiper-slide">
-                        <a href="#history-block-tab-4" class="history-block-card">
-                            2021
-                        </a>
-                    </li>
-                    <li class="swiper-slide">
-                        <a href="#history-block-tab-5" class="history-block-card">
-                            2021
-                        </a>
-                    </li>
-                    <li class="swiper-slide">
-                        <a href="#history-block-tab-6" class="history-block-card">
-                            2022
-                        </a>
-                    </li>
-                    <li class="swiper-slide">
-                        <a href="#history-block-tab-7" class="history-block-card">
-                            2024
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            <div class="history-block-tab-content">
-                <div id="history-block-tab-1">
-                    <p>
-                        К 2022 году объемы производства группы компаний выросли. ОсОО “Снэк Фудс”, известный как ТМ “Тойбосс
-                        Сэндвич”, масштабировал свое производство и открыл цех площадью в 2000 кв.м в городе Ош.
-                    </p>
-                     
-                    <p>
-                        Так же с целью масштабирования, компанией было куплено здание REEMSTMA Kyrgyzstan, площадью 12000 (?).
-                        Начались вестись работы по переоборудованию и адаптированию здания под пищевое производство.  
-                    </p>
-                    <p>История
-                        компании началась с Бектурсуна и Мырзабека Орумбаевых, двух братьев из города Каракол, которые приехали
-                        в Астану на</p>
-                    <p>
-                        К 2022 году объемы производства группы компаний выросли. ОсОО “Снэк Фудс”, известный как ТМ “Тойбосс
-                        Сэндвич”, масштабировал свое производство и открыл цех площадью в 2000 кв.м в городе Ош.
-                    </p>
-                     
-                    <p>
-                        Так же с целью масштабирования, компанией было куплено здание REEMSTMA Kyrgyzstan, площадью 12000 (?).
-                        Начались вестись работы по переоборудованию и адаптированию здания под пищевое производство.  
-                    </p>
-                    <p>История
-                        компании началась с Бектурсуна и Мырзабека Орумбаевых, двух братьев из города Каракол, которые приехали
-                        в Астану на</p>
+        <div class="wrapper">
+            <h3 class="section-title">
+                ПРОЧНОСТЬ КАМНЯ, ЦЕННОСТЬ ОТНОШЕНИЙ
+            </h3>
+            <h2 class="title">
+                Более 10 лет — средний опыт наших сотрудников в логистических перевозках 
+            </h2>
+            <p class="desc">Мы предоставляем весь спектр транспортных решений, от линейного морского сервиса до
+                комплексных
+                мультимодальных решений, обеспечивая оперативность и прозрачность на каждом этапе перевозки. </p>
+            <div class="button">
+                ЗАПРОСИТЬ СТАВКУ
 
-                </div>
-                <div id="history-block-tab-2">
-                    <p>
-                        К 2022 году объемы производства группы компаний выросли. ОсОО “Снэк Фудс”, известный как ТМ “Тойбосс
-                        Сэндвич”, масштабировал свое производство и открыл цех площадью в 2000 кв.м в городе Ош.
-                    </p>
-                     
-                    <p>
-                        Так же с целью масштабирования, компанией было куплено здание REEMSTMA Kyrgyzstan, площадью 12000 (?).
-                        Начались вестись работы по переоборудованию и адаптированию здания под пищевое производство.  
-                    </p>
-                    <p>История
-                        компании началась с Бектурсуна и Мырзабека Орумбаевых, двух братьев из города Каракол, которые приехали
-                        в Астану на</p>
-                </div>
-                <div id="history-block-tab-3">2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci dolores
-                    ea harum nam necessitatibus quidem quisquam ut voluptate? Officiis, placeat.
-                </div>
-                <div id="history-block-tab-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, ducimus?</div>
-                <div id="history-block-tab-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, qui!</div>
-                <div id="history-block-tab-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, maiores.</div>
-                <div id="history-block-tab-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quidem.</div>
             </div>
-
+            <div></div>
+            <div class="grid">
+                <a href="" class="item" style="background-image: url('img/svg/calendar.svg')">
+                    Расписание
+                    рейсов
+                </a>
+                <a href="" class="item" style="background-image: url('img/svg/calendar.svg')">
+                    Действующие
+                    ставки
+                </a>
+            </div>
         </div>
     </div>
 </section>
-<section class="mission-block">
+<section class="our-services">
     <div class="container">
-        <div class="mission-block-wrapper">
-            <h2 class="mission-block-title">Миссия</h2>
-            <p class="mission-block-slogan">Создание лучших продуктов для лучшего мира</p>
-            <p class="mission-block-desc">Так, мы нацелены на производство лучших продуктов благодаря обеспечению
-                превосходного вкуса и высочайших
-                стандартов качества и безопасности продукции. При этом, мы придаем огромное значение тому, чтобы наша
-                деятельность делала окружающий наш мир лучше и приносила пользу для Кыргызстана.</p>
-            <h2 class="mission-block-title">Видение</h2>
-            <p class="mission-block-desc">Мы стремимся быть лидером и образцом качества, безопасности, а так же
-                прозрачности в пищевой и
-                агропромышленной индустрии Центральной Азии, заботясь о потребителе, сотруднике, обществе и мире
-                вокруг.</p>
+        <h2 class="section-title">
+            Наши услуги
+        </h2>
+        <div class="grid">
+            <div class="grid-left">
+                <a href="" class="card">
+                    <img class="card-image" src="img/svg/ship.svg" alt="">
+                    <h3 class="card-title large">
+                        Морские
+                        контейнерные
+                        сервисы
+                    </h3>
+                    <p class="card-desc">
+                        Наша компания оказывает весь перечень услуг, необходимых при морской перевозке. <br>
+                        Мы предлагаем доставку на базе собственных линейных сервисов и контейнерного оборудования,
+                        а также привлекая надёжных партнёров.
+                    </p>
+                </a>
+            </div>
+            <div class="grid-right">
+                <a href="" class="card">
+                    <img class="card-image" src="img/svg/truck.svg" alt="">
+                    <h3 class="card-title">
+                        Мультимодальные
+                        решения
+                    </h3>
+                </a>
+                <a href="" class="card">
+                    <img class="card-image" src="img/svg/anchor.svg" alt="">
+                    <h3 class="card-title">
+                        Судовое
+                        агентирование
+                    </h3>
+                </a>
+                <a href="" class="card">
+                    <img class="card-image" src="img/svg/trailer.svg" alt="">
+                    <h3 class="card-title">
+                        Ж/Д
+                        сервис
+                    </h3>
+                </a>
+                <a href="" class="card">
+                    <img class="card-image" src="img/svg/reverse-arrow.svg" alt="">
+                    <h3 class="card-title">
+                        Линейное
+                        агентирование
+                    </h3>
+                </a>
+            </div>
+
+        </div>
+        <div class="grid-footer">
+            <a href="" class="grid-footer-item">
+                Страхование
+            </a>
+            <a href="" class="grid-footer-item">
+                Перетарка
+            </a>
+            <a href="" class="grid-footer-item">
+                Хранение
+            </a>
+            <a href="" class="grid-footer-item">
+                Индивидуальная дистрибьютерская деятельность 
+            </a>
         </div>
     </div>
 </section>
-
-<section class="advantages-block mode">
+<section class="graphic">
     <div class="container">
-        <h3 class="section-title">Ценности</h3>
-        <p class="advantages-block-desc">С самого основания компании, мы стремились поступать правильно и установили для
-            себя ключевые ценности. Эти
-            ценности отражают наши убеждения и служат нашим главным ориентиром в достижении нашей миссии. Так, следующие
-            ценности определяют, как мы работаем, как принимаем решения и как взаимодействуем друг с другом.</p>
-        <div id="tabs-advantages">
-            <div class="swiper">
-                <ul class="swiper-wrapper">
-                    <li class="swiper-slide">
-                        <a href="#tabs-advantages-1" class="advantages-block-card">
-                            <div class="advantages-block-card-title">Доверие
-                                потребителя
-                            </div>
-                            <div class="advantages-block-card-footer">
-                                <div class="advantages-block-card-image">
-                                    <img class="advantages-block-card-decor" src="img/svg/caret-down.svg" alt="">
-                                </div>
-                                <div class="advantages-block-card-count">
-                                    1
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="swiper-slide">
-                        <a href="#tabs-advantages-2" class="advantages-block-card">
-                            <div class="advantages-block-card-title">Мы - это
-                                люди
-                            </div>
-                            <div class="advantages-block-card-footer">
-                                <div class="advantages-block-card-image">
-                                    <img class="advantages-block-card-decor" src="img/svg/caret-down.svg" alt="">
-                                </div>
-                                <div class="advantages-block-card-count">
-                                    2
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="swiper-slide">
-                        <a href="#tabs-advantages-3" class="advantages-block-card">
-                            <div class="advantages-block-card-title">На шаг
-                                впереди
-                            </div>
-                            <div class="advantages-block-card-footer">
-                                <div class="advantages-block-card-image">
-                                    <img class="advantages-block-card-decor" src="img/svg/caret-down.svg" alt="">
-                                </div>
-                                <div class="advantages-block-card-count">
-                                    3
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="swiper-slide">
-                        <a href="#tabs-advantages-4" class="advantages-block-card">
-                            <div class="advantages-block-card-title">Вклад в
-                                общество
-                            </div>
-                            <div class="advantages-block-card-footer">
-                                <div class="advantages-block-card-image">
-                                    <img class="advantages-block-card-decor" src="img/svg/caret-down.svg" alt="">
-                                </div>
-                                <div class="advantages-block-card-count">
-                                    4
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="swiper-slide">
-                        <a href="#tabs-advantages-5" class="advantages-block-card">
-                            <div class="advantages-block-card-title">
-                                Прозрачная
-                                и честная
-                                деятельность
-                            </div>
-                            <div class="advantages-block-card-footer">
-                                <div class="advantages-block-card-image">
-                                    <img class="advantages-block-card-decor" src="img/svg/caret-down.svg" alt="">
-                                </div>
-                                <div class="advantages-block-card-count">
-                                    5
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-                <div class="swiper-pagination"></div>
+        <h2 class="section-title">
+            О компании в цифрах
+        </h2>
+        <div class="grid">
+            <div class="grid-left">
+                <div>
+                    <div class="counter">10000</div>
+                    <p class="desc">перевезенных контейнеров</p>
+                </div>
+                <div>
+                    <div class="counter">200</div>
+                    <p class="desc">рейсов</p>
+                </div>
+            </div>
+            <div class="grid-right">
+                <img src="img/svg/aea.svg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="partners mode-1">
+    <div class="container">
+        <div class="heading">
+            <h2 class="section-title">
+                Наши партнеры
+            </h2>
+            <div class="swiper-buttons">
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
-            <div class="advantages-block-tab-text" id="tabs-advantages-1">
-                <p>Наша репутация и ценность строятся на доверии потребителей. Мы стремимся к тому, чтобы каждый клиент
-                    знал, что продукт, который он покупает, является не только вкусными, но и безопасными для его
-                    здоровья.
-                    Поэтому качество и безопасность - основа нашей продукции.
-
-                </p>
-                <p> Наши заводы имеют сертификацию FSSC 22000 и аккредитованную лабораторию, подтверждающие, что мы
-                    контролируем качество сырья и следуем самым строгим стандартам безопасности и качества в
-                    производстве.
-                    Не менее важным является, что наша продукция является Халал, что подтверждено ДУМК КР и
-                    Госстандартом
-                    Кыргызстана. Мы работаем только с сертифицированными поставщиками, а наличие своего убойного цеха
-                    гарантирует, что весь скот забивается в соответствии с принципами Халал.</p>
-            </div>
-            <div class="advantages-block-tab-text" id="tabs-advantages-2">
-                <p>tab2</p>
-            </div>
-            <div class="advantages-block-tab-text" id="tabs-advantages-3">
-                <p>tab3</p>
-            </div>
-            <div class="advantages-block-tab-text" id="tabs-advantages-4">
-                <p>tab4</p>
-            </div>
-            <div class="advantages-block-tab-text" id="tabs-advantages-5">
-                <p>tab5</p>
-            </div>
         </div>
-
-
-    </div>
-</section>
-<section
-        class="statistics-block"
-        style="background-image: linear-gradient(90deg, rgba(41,91,184,0.9), rgba(30,30,30,0.9)), url(img/png/stats.png)"
->
-    <div class="container">
-        <h3 class="section-title">Статистика</h3>
-        <div class="statistics-block-grid">
-            <div class="statistics-block-grid-item">
-                <div class="statistics-block-grid-item-title">ЛИДЕРЫ</div>
-                <div class="statistics-block-grid-item-count">
-                    №
-                    <span class="counter">1</span>
-                </div>
-                <p class="statistics-block-grid-item-desc">
-                    производитель колбасных изделий в Кыргызстане
-                </p>
-            </div>
-            <div class="statistics-block-grid-item">
-                <div class="statistics-block-grid-item-title">УВЕРЕННОСТЬ</div>
-                <div class="statistics-block-grid-item-count">
-                    <span class="counter">15</span>
-                    лет
-                </div>
-                <p class="statistics-block-grid-item-desc">
-                    вашего доверия. Идем только вперед
-                </p>
-            </div>
-            <div class="statistics-block-grid-item">
-                <div class="statistics-block-grid-item-title">Группа компаний</div>
-                <div class="statistics-block-grid-item-count">
-                    <span class="counter">4</span>
-                </div>
-                <p class="statistics-block-grid-item-desc">
-                    ведущие компании в
-                    агро-пищевой индустрии
-                </p>
-            </div>
-            <div class="statistics-block-grid-item">
-                <div class="statistics-block-grid-item-title">КОМАНДА</div>
-                <div class="statistics-block-grid-item-count">
-                    <span class="counter">1200</span>
-                </div>
-                <p class="statistics-block-grid-item-desc">
-                    профессионалов в группе компаний
-                </p>
-            </div>
-            <div class="statistics-block-grid-item">
-                <div class="statistics-block-grid-item-title">ЛЕГКИЙ ДОСТУП</div>
-                <div class="statistics-block-grid-item-count">
-                    <span class="counter">100</span>
-                    %
-                </div>
-                <p class="statistics-block-grid-item-desc">
-                    покрытия. Мы во всех регионах страны
-                </p>
-            </div>
-            <div class="statistics-block-grid-item">
-                <div class="statistics-block-grid-item-title">АССОРТИМЕНТ</div>
-                <div class="statistics-block-grid-item-count">
-                    <span class="counter">32</span>
-                    видов
-                </div>
-                <p class="statistics-block-grid-item-desc">
-                    колбасных изделий и деликатесов. Это число непрерывно растет
-                </p>
-            </div>
-            <div class="statistics-block-grid-item">
-                <div class="statistics-block-grid-item-title">Экономика</div>
-                <div class="statistics-block-grid-item-count">
-                    Топ-
-                    <span class="counter">10</span>
-                </div>
-                <p class="statistics-block-grid-item-desc">
-                    крупнейших налогоплательщиков страны
-                </p>
-            </div>
-            <div class="statistics-block-grid-item">
-                <div class="statistics-block-grid-item-title">мощность</div>
-                <div class="statistics-block-grid-item-count">
-                    <span class="counter">40</span>
-                    тонн
-                </div>
-                <p class="statistics-block-grid-item-desc">
-                    в сутки производится ваших любимых продуктов
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="certificate-block">
-    <div class="container">
-        <h3 class="section-title">Сертификаты</h3>
-        <div class="swiper">
-            <div class="swiper-wrapper" id="lightgallery">
-                <div
-                        class="swiper-slide"
-                        data-src="img/png/sertificate-2.png"
-                        data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>"
-                >
-                    <picture class="certificate-block-card-picture">
-                        <img class="certificate-block-card-img" src="img/png/sertificate-2.png" alt="">
-                    </picture>
-                </div>
-                <div class="swiper-slide" data-src="img/png/sertificate-2.png">
-                    <picture class="certificate-block-card-picture">
-                        <img class="certificate-block-card-img" src="img/png/sertificate-2.png" alt="">
-                    </picture>
-                </div>
-                <div class="swiper-slide" data-src="img/png/sertificate-2.png">
-                    <picture class="certificate-block-card-picture">
-                        <img class="certificate-block-card-img" src="img/png/sertificate-2.png" alt="">
-                    </picture>
-                </div>
-                <div class="swiper-slide" data-src="img/png/sertificate.png">
-                    <div class="certificate-block-card">
-                        <picture class="certificate-block-card-picture">
-                            <img class="certificate-block-card-img" src="img/png/sertificate.png" alt="">
-                        </picture>
-                    </div>
-                </div>
-                <div class="swiper-slide" data-src="img/png/sertificate.png">
-                    <picture class="certificate-block-card-picture">
-                        <img class="certificate-block-card-img" src="img/png/sertificate.png" alt="">
-                    </picture>
-                </div>
-                <div class="swiper-slide" data-src="img/png/sertificate-2.png">
-                    <picture class="certificate-block-card-picture">
-                        <img class="certificate-block-card-img" src="img/png/sertificate-2.png" alt="">
-                    </picture>
-                </div>
-
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-    </div>
-    <div class="section-show-more">
-        <a href="" class="button red-button">Все сертификаты</a>
-    </div>
-</section>
-<div class="hr"></div>
-
-<section class="certificate-block">
-    <div class="container">
-        <h3 class="section-title">Награды</h3>
         <div class="swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <picture class="certificate-block-card-picture">
-                        <img class="certificate-block-card-img" src="img/png/nagradi-1.png" alt="">
-                    </picture>
+                    <img class="image" src="img/png/logos/logo-1.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <picture class="certificate-block-card-picture">
-                        <img class="certificate-block-card-img" src="img/png/nagradi-2.png" alt="">
-                    </picture>
+                    <img class="image" src="img/png/logos/logo-2.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <picture class="certificate-block-card-picture">
-                        <img class="certificate-block-card-img" src="img/png/nagradi-3.png" alt="">
-                    </picture>
+                    <img class="image" src="img/png/logos/logo-3.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <div class="certificate-block-card">
-                        <picture class="certificate-block-card-picture">
-                            <img class="certificate-block-card-img" src="img/png/nagradi-1.png" alt="">
-                        </picture>
-                    </div>
+                    <img class="image" src="img/png/logos/logo-4.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <picture class="certificate-block-card-picture">
-                        <img class="certificate-block-card-img" src="img/png/nagradi-1.png" alt="">
-                    </picture>
+                    <img class="image" src="img/png/logos/logo-5.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <picture class="certificate-block-card-picture">
-                        <img class="certificate-block-card-img" src="img/png/nagradi-1.png" alt="">
-                    </picture>
+                    <img class="image" src="img/png/logos/logo-6.png" alt="">
                 </div>
-
+                <div class="swiper-slide">
+                    <img class="image" src="img/png/logos/logo-2.png" alt="">
+                </div>
             </div>
             <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
         </div>
     </div>
-    <div class="section-show-more">
-        <a href="" class="button red-button">Все награды</a>
+</section>
+<div></div>
+<section class="partners mode">
+    <div class="container">
+        <div class="heading">
+            <h2 class="section-title">
+                Наши клиенты
+            </h2>
+            <div class="swiper-buttons">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="image" src="img/png/logos/logo-1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="image" src="img/png/logos/logo-2.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="image" src="img/png/logos/logo-3.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="image" src="img/png/logos/logo-4.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="image" src="img/png/logos/logo-5.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="image" src="img/png/logos/logo-6.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="image" src="img/png/logos/logo-2.png" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
     </div>
 </section>
-
+<section class="faq">
+    <div class="container">
+        <div id="faq">
+            <h3 class="title">История</h3>
+            <div class="content">
+                <p>
+                    «Аметист» начинал свою деятельность с перевозок на Черном море, постепенно расширяя географию портов
+                    и набор сервисов, ориентируясь на потребность бизнеса. <br><br> В списке предоставляемых услуг
+                    появились
+                    интермодальные перевозки, расширился свой парк контейнеров, мы ввели такие сервисы как страхование,
+                    складская обработка грузов, таможенное оформление, аренда контейнеров под запрос и многие
+                    другие.<br><br>
+                    Головной офис компании находится в Санкт-Петербурге, наши филиалы работают в Новороссийске,
+                    Александрии и Стамбуле.
+                </p>
+            </div>
+            <h3 class="title">Преимущества</h3>
+            <div class="content">
+                <p>
+                    «Аметист» начинал свою деятельность с перевозок на Черном море, постепенно расширяя географию портов
+                    и набор сервисов, ориентируясь на потребность бизнеса. <br><br> В списке предоставляемых услуг
+                    появились
+                    интермодальные перевозки, расширился свой парк контейнеров, мы ввели такие сервисы как страхование,
+                    складская обработка грузов, таможенное оформление, аренда контейнеров под запрос и многие
+                    другие.<br><br>
+                    Головной офис компании находится в Санкт-Петербурге, наши филиалы работают в Новороссийске,
+                    Александрии и Стамбуле.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="partners-about-us">
+    <div class="container">
+        <div class="heading">
+            <h2 class="section-title">
+                партнеры о нас
+            </h2>
+            <div class="swiper-buttons">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card">
+                        <h4 class="card-title">Иван Писарев </h4>
+                        <h5 class="card-subtitle">ООО «Баусервис»</h5>
+                        <p class="card-desc">
+                            Мы обратились в Аметист с очень срочным запросом на
+                            перевозку, и были приятно удивлены скоростью, с которой нам все рассчитали и оформили. Буду
+                            рекомендовать.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <h4 class="card-title">Иван Писарев </h4>
+                        <h5 class="card-subtitle">ООО «Баусервис»</h5>
+                        <p class="card-desc">
+                            Мне посоветовали эту компанию знакомые, нужно было отправить груз по сложной схеме от двери
+                            до двери, причём и морем и ж/д и наземным транспортом. Отработали чётко, все пришло вовремя,
+                            менеджеры очень толковые ребята с опытом, подсказали как лучше все оформить. Плюс получилось
+                            дешевле, потому что это первые руки.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <h4 class="card-title">Иван Писарев </h4>
+                        <h5 class="card-subtitle">ООО «Ред»</h5>
+                        <p class="card-desc">
+                            Мы обратились в Аметист с очень срочным запросом на
+                            перевозку, и были приятно удивлены скоростью, с которой нам все рассчитали и оформили. Буду
+                            рекомендовать.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+<section class="advantages">
+    <div class="container">
+        <h2 class="section-title">
+            Наши преимущества
+        </h2>
+        <div class="grid">
+            <div class="grid-left">
+                <ul class="list">
+                    <li>Флот в управлении</li>
+                    <li>Cобственный парк контейнеров</li>
+                    <li>Регулярные сервисы</li>
+                    <li>Доставка от двери до двери</li>
+                    <li>Сильная команда</li>
+                    <li>Скорость принятия решений</li>
+                </ul>
+                <div class="grid-form">
+                    <div class="grid-form-left">
+                        <p>
+                            Подпишитесь на нашу рассылку, чтобы
+                            быть в курсе изменений в расписании
+                            и тарифах:</p>
+                    </div>
+                    <div class="grid-form-right">
+                        <form action="" class="form">
+                            <label>
+                                <input type="text" placeholder="Ваш e-mail *">
+                                <button>отправить</button>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-right">
+                <form action="" class="form">
+                    <h6>Заявка на консультацию</h6>
+                    <label>
+                        <input type="text" placeholder="Вас зовут *">
+                    </label>
+                    <label>
+                        <input type="text" placeholder="Название компании">
+                    </label>
+                    <label>
+                        <input type="text" placeholder="+7 999 999 99 99 *">
+                    </label>
+                    <button>ОТПРАВИТЬ ЗАЯВКУ</button>
+                    <p>Нажимая на кнопку, вы даёте согласие с <a href="">Политикой в отношении обработки персональных
+                        данных</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
 <footer class="footer">
     <div class="container">
-        <div class="footer-grid">
-            <div class="footer-grid-left">
-                <a href="" class="footer-grid-left-logo"><img src="img/svg/toyboss-logo-white.svg" alt=""></a>
-                <p class="footer-slogan">Компания «Тойбосс» -производитель
-                    колбасных изделий</p>
-                <div class="footer-social">
-                    <a href="">
-                        <img src="img/svg/facebook.svg" alt="">
-                    </a>
-                    <a href="">
-                        <img src="img/svg/tiktok.svg" alt="">
-                    </a>
-                    <a href="">
-                        <img src="img/svg/facebook-2.svg" alt="">
-                    </a>
-                    <a href="">
-                        <img src="img/svg/youtube.svg" alt="">
-                    </a>
-                </div>
-                <div class="footer-whatsapp">
-                    <div class="footer-whatsapp-label">WhatsApp:</div>
-                    <a class="footer-whatsapp-link" href="tel: +996 312 45 37 66"><img src="img/svg/whatsapp.svg"
-                                                                                       alt="">+996 312 45 37 66</a>
-                </div>
+        <div class="grid">
+            <div class="grid-item">
+                <h6 class="title">ПРОБЛЕМЫ / ЖАЛОБЫ?</h6>
+                <div class="button">СООБЩИТЬ НАМ</div>
+                <h6 class="title">ОФИСЫ</h6>
+                <ul>
+                    <li>191115, <b>Санкт-Петербург</b>,</li>
+                    <li>ул. Шпалерная, 51,</li>
+                    <li>БЦ «Таврический», офис 531</li>
+                    <li>Тел.: +7 (812) 416-47-48</li>
+
+                </ul>
+                <ul>
+                    <li>353900, <b>Новороссийск</b>, ул.</li>
+                    <li>Леднёва, 6, офис 305</li>
+                    <li>Тел.: +7(8617)601021</li>
+                </ul>
             </div>
-            <div class="footer-grid-right">
-                <div>
-                    <div class="footer-right-title">контакты</div>
-                    <div class="footer-right-info">
-                        <div class="footer-right-info-label">Офис в г. Бишкек</div>
-                        <div class="footer-right-info-title">Ул. Чокана Валиханова 2/3Б</div>
-                    </div>
-                    <div class="footer-right-info">
-                        <div class="footer-right-info-label">Телефон:</div>
-                        <div class="footer-right-info-title">+996 312 45 37 66</div>
-                    </div>
-                    <div class="footer-right-info">
-                        <div class="footer-right-info-label">E-mail:</div>
-                        <div class="footer-right-info-title">info@toyboss.kg</div>
-                    </div>
-                </div>
-                <div>
-                    <div class="footer-right-title">Меню</div>
-                    <nav class="footer-right-nav">
-                        <a href="">О НАС</a>
-                        <a href="">Производство</a>
-                        <a href="">Продукция</a>
-                        <a href="">СОТРУДНИЧЕСТВО</a>
-                        <a href="">НОВОСТИ</a>
-                    </nav>
-                </div>
+            <div class="grid-item">
+                <h6 class="title">ОТДЕЛ ПО РАБОТЕ С КЛИЕНТАМИ</h6>
+                <ul>
+                    <li><b>Импорт:</b> ImportCS@ametistline.ru</li>
+                    <li><b>Экспорт:</b> Export.ru@ametistline.ru</li>
+                </ul>
+                <h6 class="title">ОТДЕЛ ПРОДАЖ</h6>
+                <ul>
+                    <li><a href="mailto: Sales@ametistline.ru">Sales@ametistline.ru</a></li>
+                </ul>
+                <h6 class="title">ОТДЕЛ ОБОРУДОВАНИЯ</h6>
+                <ul>
+                    <li><a href="mailto: Equipment@ametistline.ru">Equipment@ametistline.ru</a></li>
+                </ul>
+                <h6 class="title">ДЛЯ КОНТРАГЕНТОВ</h6>
+                <ul>
+                    <li><a href="mailto: Office@ametistline.ru">Office@ametistline.ru</a></li>
+                </ul>
             </div>
+            <div class="grid-item">
+                <h6 class="title">АГЕНТЫ В ТУРЦИИ</h6>
+                <ul>
+                    <li>AMT DENİZCİLİK ANONİM ŞİRKETİ</li>
+                    <li>Адрес: İÇERENKÖY MAH. ÇAYIR CAD. AY</li>
+                    <li>PLAZA NO: 2 İÇ KAPI NO: 2</li>
+                    <li>ATAŞEHİR/ İSTANBUL</li>
+                    <li>+90 216 341 10 11</li>
+
+                </ul>
+                <h6 class="title">АГЕНТЫ В ЕГИПТЕ
+                </h6>
+                <ul>
+                    <li>ESG Shipping & Logistics S.A.E.</li>
+                    <li>Адрес: 38 B Victor Basile St. , From Sultan</li>
+                    <li>Hussien , Khartoum Square , Bab Shark</li>
+                    <li>+203 4782 443</li>
+
+
+                </ul>
+
+            </div>
+        </div>
+        <div class="copyright"><b>© ООО «Аметист»</b>
+            191124, г. Санкт-Петербург, вн. тер. г. муниципальный округ Смольнинское, ул. Шпалерная, д. 51 литера А,
+            помещ. 2-Н, №570, 571 (офис 531).
+            ИНН 7813621293 / ОГРН 1187847278112
         </div>
     </div>
 </footer>
-<div class="footer-copyright">
-    Все права защищены. ОсОО Адал Азык 2024
-</div>
 
 <script src="libs/jquery/jquery-v2.2.4.min.js"></script>
-<script src="libs/swiper/swiper-bundle.min.js"></script>
-<script src="libs/waypoints/waypoints.min.js"></script>
-<script src="libs/jquery/jquery.counterup.min.js"></script>
 <script src="libs/jquery/jquery-ui.js"></script>
-<script src="libs/lightgallery/lightgallery.js"></script>
-<script src="libs/aos/aos.js"></script>
+<script src="libs/jquery/jquery.counterup.min.js"></script>
+<script src="libs/waypoints/waypoints.min.js"></script>
+<script src="libs/swiper/swiper-bundle.min.js"></script>
 <script src="js/swiper.js"></script>
 <script src="js/global.js"></script>
 </body>
