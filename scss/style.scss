@@ -916,3 +916,62 @@
     }
   }
 }
+.about-company{
+  margin-bottom: 96px;
+  background-color: #fff;
+  @media (max-width: 1200px) {
+    margin-bottom: 48px;
+  }
+  .grid{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px -12px 0 -12px;
+    @media (max-width: 1200px) {
+      margin: 2px -4px 0 -4px
+    }
+  }
+  .item{
+    padding: 32px 34px;
+    background-color: #DAE8F2;
+    margin: 24px 12px 0 12px;
+    width: calc(33.33% - 24px);
+    border-radius: 12px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    @media (max-width: 1200px) {
+      width: calc(33.33% - 16px);
+      padding: 16px;
+      margin: 8px 4px 0 4px;
+      background-image: none;
+    }
+    @media (max-width: 1200px) {
+      width: calc(50% - 16px);
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+  }
+  img {
+    height: 110px;
+    @media (max-width: 768px) {
+      width: 64px;
+      height: 64px;
+    }
+  }
+  .title{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    margin: 10px 0 16px 0;
+    color: #61337C;
+    @media (max-width: 1200px) {
+      margin: 16px 0 8px 0;
+    }
+  }
+  p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
