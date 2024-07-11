@@ -82,12 +82,48 @@ html, body {
   padding: 16px 0;
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 12;
   background-color: #F0F6FA;
   @media (max-width: 1200px) {
     padding: 10px 0;
   }
-
+  .mobileMenu{
+    display: none;
+    background-color: #e8f2f8;
+    padding: 20px 0;
+    margin: 20px 0 -12px 0;
+    &.active{
+      display: flex;
+    }
+    .container{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      @media (max-width: 640px) {
+        justify-content: center;
+        .socials{
+          margin-right: 0;
+        }
+        .nav{
+          flex-wrap: wrap;
+          justify-content: center;
+          margin-bottom: 20px;
+          .nav-link{
+            width: 100% ;
+            text-align: center;
+          }
+        }
+        .button{
+          margin-top: 20px;
+        }
+        .socials{
+          margin-top: 10px;
+          justify-content: center;
+          width: 100%;
+        }
+      }
+    }
+  }
   .header-grid {
     display: flex;
     align-items: center;

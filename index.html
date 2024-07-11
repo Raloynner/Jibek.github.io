@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="libs/modals/jquery.modal.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Ametist</title>
 </head>
@@ -16,12 +17,12 @@
 <header class="header">
     <div class="container">
         <div class="header-grid">
-            <a href="./" class="logo-link">
+            <a href="" class="logo-link">
                 <img src="img/svg/logo.svg" alt="">
             </a>
             <div class="header-wrapper">
                 <nav class="nav">
-                    <a class="nav-link" href="./about-us.html">О Нас</a>
+                    <a class="nav-link" href="">О Нас</a>
                     <a class="nav-link" href="">Услуги</a>
                     <a class="nav-link" href="">Клиентам</a>
                     <a class="nav-link" href="">Вакансии</a>
@@ -40,9 +41,36 @@
                     </a>
 
                 </div>
-                <div class="button">ЗАПРОС СТАВКИ</div>
+                <div class="button openModal">ЗАПРОС СТАВКИ</div>
             </div>
-            <div class="mobile-burger"></div>
+            <div class="mobile-burger burger"></div>
+
+        </div>
+
+    </div>
+    <div class="mobileMenu">
+        <div class="container">
+            <nav class="nav">
+                <a class="nav-link" href="">О Нас</a>
+                <a class="nav-link" href="">Услуги</a>
+                <a class="nav-link" href="">Клиентам</a>
+                <a class="nav-link" href="">Вакансии</a>
+                <a class="nav-link" href="">Контакты</a>
+            </nav>
+            <div class="lang">
+                <a href="" class="lang-link">RU</a>
+            </div>
+            <a href="" class="phone">8 (812) 416 47 48</a>
+            <div class="socials">
+                <a href="">
+                    <img src="img/svg/telegram.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="img/svg/linkedin.svg" alt="">
+                </a>
+
+            </div>
+            <div class="button openModal">ЗАПРОС СТАВКИ</div>
         </div>
     </div>
 </header>
@@ -57,16 +85,16 @@
     </picture>
     <div class="container">
         <div class="wrapper">
-            <h3 class="section-title">
-                ПРОЧНОСТЬ КАМНЯ, ЦЕННОСТЬ ОТНОШЕНИЙ
-            </h3>
+<!--            <h3 class="section-title">-->
+<!--                ПРОЧНОСТЬ КАМНЯ, ЦЕННОСТЬ ОТНОШЕНИЙ-->
+<!--            </h3>-->
             <h2 class="title">
-                Более 10 лет — средний опыт наших сотрудников в логистических перевозках 
+                Ваш надежный проводник в международный логистике
             </h2>
             <p class="desc">Мы предоставляем весь спектр транспортных решений, от линейного морского сервиса до
                 комплексных
                 мультимодальных решений, обеспечивая оперативность и прозрачность на каждом этапе перевозки. </p>
-            <div class="button">
+            <div class="button openModal">
                 ЗАПРОСИТЬ СТАВКУ
 
             </div>
@@ -101,10 +129,6 @@
                 <img class="image" src="img/svg/circle-green-icon.svg" width="64" height="64" alt="">
                 <h4 class="title"><b class="counter">33</b> терминала / депо</h4>
                 <p class="desc">Россия 23, Турция 7, Египет 3</p>
-            </div>
-            <div class="item">
-                <img class="image" src="img/svg/circle-green-icon.svg" width="64" height="64" alt="">
-                <h4 class="title"><b class="counter">250</b> маршрутов в неделю</h4>
             </div>
 
         </div>
@@ -218,58 +242,6 @@
         </div>
     </div>
 </section>
-<section class="partners-about-us">
-    <div class="container">
-        <div class="heading">
-            <h2 class="section-title">
-                партнеры о нас
-            </h2>
-            <div class="swiper-buttons">
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-        </div>
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="card">
-                        <h4 class="card-title">Иван Писарев </h4>
-                        <h5 class="card-subtitle">ООО «Баусервис»</h5>
-                        <p class="card-desc">
-                            Мы обратились в Аметист с очень срочным запросом на
-                            перевозку, и были приятно удивлены скоростью, с которой нам все рассчитали и оформили. Буду
-                            рекомендовать.
-                        </p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card">
-                        <h4 class="card-title">Иван Писарев </h4>
-                        <h5 class="card-subtitle">ООО «Баусервис»</h5>
-                        <p class="card-desc">
-                            Мне посоветовали эту компанию знакомые, нужно было отправить груз по сложной схеме от двери
-                            до двери, причём и морем и ж/д и наземным транспортом. Отработали чётко, все пришло вовремя,
-                            менеджеры очень толковые ребята с опытом, подсказали как лучше все оформить. Плюс получилось
-                            дешевле, потому что это первые руки.
-                        </p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card">
-                        <h4 class="card-title">Иван Писарев </h4>
-                        <h5 class="card-subtitle">ООО «Ред»</h5>
-                        <p class="card-desc">
-                            Мы обратились в Аметист с очень срочным запросом на
-                            перевозку, и были приятно удивлены скоростью, с которой нам все рассчитали и оформили. Буду
-                            рекомендовать.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </div>
-</section>
 <section class="advantages">
     <div class="container">
         <h2 class="section-title">
@@ -327,8 +299,8 @@
     <div class="container">
         <div class="grid">
             <div class="grid-item">
-                <h6 class="title">ПРОБЛЕМЫ / ЖАЛОБЫ?</h6>
-                <div class="button">СООБЩИТЬ НАМ</div>
+                <h6 class="title">СТРАХОВАНИЕ</h6>
+                <div class="button openModal">СООБЩИТЬ НАМ</div>
                 <h6 class="title">ОФИСЫ</h6>
                 <ul>
                     <li>191115, <b>Санкт-Петербург</b>,</li>
@@ -393,12 +365,44 @@
     </div>
 </footer>
 
+<div id="modalSuccess" class="modal-form modal">
+    <div class="modal-wrapper">
+        <h4 class="modal-title">Связаться с нами</h4>
+        <p class="modal-desc">Мы благодарны вам за любую обратную связь — ваши отзывы позволяют компании двигаться вперед.</p>
+        <form action="">
+            <label>
+                <input type="text" placeholder="Вас зовут *" required>
+            </label>
+            <label>
+                <input type="text" placeholder="+7 999 99 99 99 *" required>
+            </label>
+            <label>
+                <textarea placeholder="Ваше сообщение"></textarea>
+            </label>
+            <button>ОТПРАВИТЬ </button>
+        </form>
+
+<!--        <h2>Спасибо, ваша заявка успешно отправлена</h2>-->
+    </div>
+</div>
+
+
+
 <script src="libs/jquery/jquery-v2.2.4.min.js"></script>
 <script src="libs/jquery/jquery-ui.js"></script>
 <script src="libs/jquery/jquery.counterup.min.js"></script>
 <script src="libs/waypoints/waypoints.min.js"></script>
 <script src="libs/swiper/swiper-bundle.min.js"></script>
+<script src="libs/modals/modals.js"></script>
 <script src="js/swiper.js"></script>
 <script src="js/global.js"></script>
+<script>
+    $(".openModal").click(function(){
+        $('#modalSuccess').modal({
+
+        });
+    });
+
+</script>
 </body>
 </html>
