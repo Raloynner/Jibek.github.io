@@ -56,7 +56,7 @@
                 <a class="col-phone" href="tel: +7 (812) 416 47 48">+7 (812) 416 47 48</a>
             </div>
             <div>
-                <img src="img/png/map.png" alt="">
+                <div class="map js-map" data-lat="59.948406" data-long="30.384383" data-zoom="15"></div>
             </div>
         </div>
         <div class="column">
@@ -66,7 +66,7 @@
                 <a class="col-phone" href="tel: +7 (8617) 601 02">+7 (8617) 601 02</a>
             </div>
             <div>
-                <img src="img/png/map.png" alt="">
+                <div class="map js-map" data-lat="59.133371" data-long="37.996641" data-zoom="15"></div>
             </div>
         </div>
     </div>
@@ -239,5 +239,10 @@
 <script src="libs/swiper/swiper-bundle.min.js"></script>
 <script src="js/swiper.js"></script>
 <script src="js/global.js"></script>
+<script>
+    var mapURL = 'https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=4ced0b3a-aef0-4119-8b48-809a8829f3d2';
+    var mapBalloonPath = 'img/svg/logo.svg';
+</script>
+<script src="js/map.js"></script>
 </body>
 </html>
